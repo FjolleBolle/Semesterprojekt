@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F1A462BF-40C6-EABC-1738-E1B582785950}</ProjectGuid>
+    <ProjectGuid>{C315CE9F-C900-B240-20BF-77E7D1D8337B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,9 +55,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Rotater.cs" />
-    <Compile Include="Assets\Scripts\Player1Mov.cs" />
     <Compile Include="Assets\Scripts\Player2Mov.cs" />
+    <Compile Include="Assets\Scripts\DNASpawn.cs" />
+    <Compile Include="Assets\Scripts\Player1Mov.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

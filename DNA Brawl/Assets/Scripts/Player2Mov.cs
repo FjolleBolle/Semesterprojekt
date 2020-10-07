@@ -8,7 +8,6 @@ public class Player2Mov : MonoBehaviour
     Rigidbody2D rb;
     public float Speed = 3f;
     public float jumpForce = 3f;
-    bool jump; 
     public bool onGround;
 
     // Start is called before the first frame update
@@ -20,11 +19,6 @@ public class Player2Mov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && onGround)
-        {
-            jump = true;
-        }
-
         if (Input.GetKeyDown(KeyCode.W) && onGround)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -47,5 +41,10 @@ public class Player2Mov : MonoBehaviour
             rb.velocity = new Vector2(Speed, rb.velocity.y);
         if (rb.velocity.x < -Speed)
             rb.velocity = new Vector2(-Speed, rb.velocity.y);
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        Destroy(other.gameObject);
     }
 }
