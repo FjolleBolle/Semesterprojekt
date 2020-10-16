@@ -47,6 +47,10 @@ public class Player1Mov : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+        if (other.gameObject.CompareTag("DNA"))
+        {
+            Destroy(other.gameObject);
+        }
+        
     }
 }
